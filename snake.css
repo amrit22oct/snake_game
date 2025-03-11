@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg,rgb(0, 255, 106),rgb(15, 82, 217));
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.scorecard {
+  margin-bottom: 20px;
+}
+
+.scorecard table {
+  border-collapse: collapse;
+}
+
+.scorecard th, .scorecard td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(25, 20px);
+    grid-template-rows: repeat(25, 20px);
+    border: 5px solid rgb(0, 240, 232);
+    background-color: rgb(7, 216, 105);
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  
+ .box {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+  }
+
+  .blinking-food {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
